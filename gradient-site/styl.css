@@ -1,0 +1,60 @@
+/* General styles for the body and section */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f2f5; /* Light gray background */
+}
+
+section {
+    text-align: center;
+    padding: 20px;
+    /* background: #ffffff;  */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+/* Styles for the buttons */
+button {
+    font-size: 16px;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #007bff; /* Blue background */
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+}
+
+/* Styles for the copyCode div */
+.copyCode {
+    font-family: monospace;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #e9ecef; /* Light gray background for code block */
+    border: 1px solid #ddd; /* Light border color */
+    border-radius: 5px;
+    color: #333333; /* Dark gray text */
+    overflow-wrap: break-word; /* Ensure long code strings wrap */
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    button {
+        font-size: 14px;
+        padding: 8px 16px;
+    }
+    
+    .copyCode {
+        font-size: 14px;
+    }
+}
